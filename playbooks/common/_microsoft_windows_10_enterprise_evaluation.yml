@@ -1,0 +1,4 @@
+---
+- name: Run startlayout setup
+  include_role:
+    name: startlayout

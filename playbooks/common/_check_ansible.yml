@@ -1,0 +1,11 @@
+---
+- name: Get Ansible version on the controller
+  delegate_to: 'localhost'
+  check_mode: false
+  changed_when: false
+  command: ansible --version
+  register: check_ansible_register_version
+
+- name: Ansible version information
+  debug:
+    msg: '{{ check_ansible_register_version.stdout_lines }}'

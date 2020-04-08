@@ -1,0 +1,60 @@
+---
+# https://www.sevenforums.com/tutorials/10570-file-extensions-hide-show.html
+- name: 'windows : how to show known file type extensions'
+  win_regedit:
+    path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+    name: HideFileExt
+    data: 0
+    type: dword
+
+- name: 'windows : Enable QuickEdit mode'
+  win_regedit:
+    path: HKCU:\Console
+    name: QuickEdit
+    data: 1
+    type: dword
+
+- name: 'windows : Show Run command in Start Menu'
+  win_regedit:
+    path: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\
+    name: Start_ShowRun
+    data: 1
+    type: dword
+
+- name: 'windows : Show Administrative Tools in Start Menu'
+  win_regedit:
+    path: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\
+    name: StartMenuAdminTools
+    data: 1
+    type: dword
+
+# https://www.tenforums.com/tutorials/118541-enable-disable-screen-saver-windows.html
+- name: 'windows : Disable Screensaver'
+  win_regedit:
+    path: HKCU:\Software\Policies\Microsoft\Windows\Control Panel\Desktop
+    name: ScreenSaveActive
+    data: 0
+    type: dword
+
+- name: 'windows : Do not open Server Manager at logon'
+  win_regedit:
+    path: HKCU:\Software\Microsoft\ServerManager
+    name: DoNotOpenServerManagerAtLogon
+    data: 1
+    type: dword
+
+- name: 'windows : Enable UAC'
+  win_regedit:
+    path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    name: EnableLUA
+    data: 1
+    type: dword
+
+- name: "windows : Ensure local account password doesn't expire"
+  win_user:
+    name: '{{ ansible_user }}'
+    password_never_expires: true
+
+- name: Run defender setup
+  include_role:
+    name: defender

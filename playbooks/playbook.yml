@@ -1,0 +1,28 @@
+---
+- name: Provision
+  hosts: all
+  collections:
+    - sbaerlocher.virtualization
+    - sbaerlocher.windows
+  tasks:
+    - name: Include common setup variables
+      include_vars:
+        dir: '../vars/common/windows'
+        depth: 1
+
+    - name: Include tasks for virtualization type
+      include_tasks: common/_virtualization_{{ ansible_virtualization_type | lower }}.yml
+
+    - name: Run Remote Desktop setup
+      include_role:
+        name: remote_desktop
+
+    - name: Run Chocolatey setup
+      include_role:
+        name: arillso.chocolatey
+
+    - name: Include tasks for user vagrant
+      include_tasks: common/_user_vagrant.yml
+
+    - name: Include tasks for virtualization type
+      include_tasks: common/_{{ ansible_os_name | lower | replace(" ", "_") }}.yml

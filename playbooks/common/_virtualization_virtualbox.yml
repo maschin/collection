@@ -1,0 +1,8 @@
+---
+- name: Run virtualbox guest additions setup
+  include_role:
+    name: virtualbox_guest_additions
+
+- name: Run power plan setup
+  include_role:
+    name: power_plan

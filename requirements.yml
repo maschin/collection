@@ -1,0 +1,13 @@
+---
+# Roles and Collections for Maschin Playbook
+# Date: 09.03.2020
+
+roles:
+  - name: arillso.chocolatey
+    src: arillso.chocolatey
+
+collections:
+  - name: sbaerlocher.virtualization
+    version: 0.0.2
+  - name: sbaerlocher.windows
+    version: 0.0.1

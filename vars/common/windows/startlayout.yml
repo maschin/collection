@@ -1,0 +1,34 @@
+---
+startlayout_start:
+  - group: Tools
+    icons:
+      - Size: '2x2'
+        Column: '0'
+        Row: '0'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\computer.lnk"
+      - Size: '2x2'
+        Column: '2'
+        Row: '0'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Run.lnk"
+      - Size: '2x2'
+        Column: '3'
+        Row: '0'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Registry Editor.lnk"
+      - Size: '2x2'
+        Column: '1'
+        Row: '2'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Windows PowerShell.lnk"
+      - Size: '2x2'
+        Column: '2'
+        Row: '2'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Windows PowerShell ISE.lnk"
+      - Size: '2x2'
+        Column: '3'
+        Row: '2'
+        DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Task Manager.lnk"
+
+startlayout_task:
+  - taskbar: DesktopApp
+    DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Windows PowerShell.lnk"
+  - taskbar: DesktopApp
+    DesktopApplicationLinkPath: "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Run.lnk"

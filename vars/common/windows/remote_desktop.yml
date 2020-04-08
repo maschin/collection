@@ -1,0 +1,3 @@
+---
+remote_desktop_enabled: true
+remote_desktop_group: 'Remote Desktop Users'
