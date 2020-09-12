@@ -1,0 +1,8 @@
+---
+# ssh_server_match_group:
+#   - group: administrators
+#     rules:
+#       - AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+
+ssh_server_password_login: true
+ssh_sftp_enabled: true

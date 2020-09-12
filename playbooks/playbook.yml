@@ -26,3 +26,11 @@
 
     - name: Include tasks for virtualization type
       include_tasks: common/_{{ ansible_os_name | lower | replace(" ", "_") }}.yml
+
+    - name: Run OpenSSH setup
+      include_role:
+        name: arillso.sshd
+
+    - name: Run authorized key
+      include_role:
+        name: arillso.authorized_key
