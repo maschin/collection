@@ -15,7 +15,7 @@ and [human-readable changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Fixed version number for the arillso.chocolatey role.
-- Version of the Ansible collection sbaerlocher.windows upgrade from 0.0.1 to 0.0.6
+- Version of the Ansible collection sbaerlocher.windows upgrade from 0.0.1 to 0.0.7
 
 ## 0.0.3
 

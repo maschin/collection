@@ -17,4 +17,4 @@ collections:
   - name: sbaerlocher.virtualization
     version: 0.0.4
   - name: sbaerlocher.windows
-    version: 0.0.6
+    version: 0.0.7
