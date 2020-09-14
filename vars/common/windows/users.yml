@@ -1,0 +1,6 @@
+---
+users:
+  - username: vagrant
+    key: https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub
+  - username: vagrant
+    key: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdS0Z/XiP6BpW/xiLzqEymXMRzHTNlnuPfj/jqj/EtUcmPGNtlN+vpxEMA6h9PL3Xjnr2zE+FoqqRs4psRO6dlXD+zZ90VTARAETMqaoHngxXyL4bk369nc62/JVrQPOu4KlMjYs1vibn8t9ZeftXUe96LMkqZqxpQZ3NTAqxtERJqyzEMIHBkg4WpJId7Kfzu2x3I4IjIJwvCoXXxj6IX6wpa52aWPabzYwP0i+0EzZ8yFuImQpGHRTg9mR58JpyIwIa9ONGYXh+G7+vbCqBztSElgqvfPZ9tvdc+EB9CoYCKYYU3Q+gG9oTJkOkCBN6BnqTyoaN8XY+BpS0NPVFB root@lin-srv-256ba3fb'
