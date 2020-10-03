@@ -1,6 +1,6 @@
 ---
 # Roles and Collections for Maschin Playbook
-# Date: 11.09.2020
+# Date: 03.10.2020
 
 roles:
   - name: arillso.authorized_key
@@ -15,6 +15,6 @@ roles:
 
 collections:
   - name: sbaerlocher.virtualization
-    version: 0.0.8
+    version: 0.0.9
   - name: sbaerlocher.windows
     version: 0.0.7
